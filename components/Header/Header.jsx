@@ -36,11 +36,11 @@ const Header = () => {
       <nav className="bg-[#102a43] w-full py-2.5 flex flex-wrap items-center justify-center md:justify-between text-white px-4 md:px-10 gap-x-6 gap-y-2" suppressHydrationWarning={true}>
         <section className="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2">
           <a
-            href="mailto:crossoverfintechsupport@gmail.com"
+            href="mailto:stackbrsupport@gmail.com"
             className="flex items-center gap-2 hover:text-orange-400 transition-all text-[11px] sm:text-xs md:text-sm font-medium"
           >
             <MdEmail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-500" />
-            <span>crossoverfintechsupport@gmail.com</span>
+            <span>stackbrsupport@gmail.com</span>
           </a>
 
         </section>
@@ -204,24 +204,24 @@ const Header = () => {
       </nav>
 
       {/* --- Mobile Sidebar --- */}
-        <div
-          className={`fixed inset-0 bg-black/60 z-[100] transition-opacity md:hidden ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
-          onClick={closeMobileMenu}
-          suppressHydrationWarning={true}
-        >
+      <div
+        className={`fixed inset-0 bg-black/60 z-[100] transition-opacity md:hidden ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+        onClick={closeMobileMenu}
+        suppressHydrationWarning={true}
+      >
         <aside
           className={`w-[80%] max-w-[300px] h-full bg-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
           onClick={(e) => e.stopPropagation()}
           suppressHydrationWarning={true}
         >
           <div className="p-5 flex justify-between items-center border-b" suppressHydrationWarning={true}>
-            <Image 
-              src="https://res.cloudinary.com/dcgxjwv68/image/upload/v1775496900/cfs_assets/logo.png" 
-              width={180} 
-              height={70} 
-              alt="logo" 
-              className="w-28 h-auto object-contain contrast-[1.2] brightness-95 mix-blend-multiply" 
-              unoptimized={true} 
+            <Image
+              src="https://res.cloudinary.com/dcgxjwv68/image/upload/v1775496900/cfs_assets/logo.png"
+              width={180}
+              height={70}
+              alt="logo"
+              className="w-28 h-auto object-contain contrast-[1.2] brightness-95 mix-blend-multiply"
+              unoptimized={true}
             />
             <MdClose
               className="text-2xl cursor-pointer"

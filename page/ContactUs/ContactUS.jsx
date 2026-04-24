@@ -38,42 +38,42 @@ const ContactUs01 = () => {
         });
       }
     } catch (error) {
-       alert("Something went wrong. Please try again.");
-       console.error(error);
+      alert("Something went wrong. Please try again.");
+      console.error(error);
     }
   };
 
   return (
     <section className="min-h-screen bg-[#F8FAFC] flex flex-col items-center justify-center p-4 md:p-10 font-sans relative overflow-hidden">
-      
+
       <div className="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none -z-10">
         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-orange-100 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-blue-100 rounded-full blur-[100px]" />
       </div>
 
-    
+
       <div className="text-center mb-16 relative z-10">
         <h1 className="text-4xl md:text-6xl font-black text-[#011C2B] mb-4 tracking-tight">
           Connect with <span className="text-orange-500">Us</span>
         </h1>
         <p className="text-slate-500 text-lg max-w-2xl mx-auto font-medium">
-        Got a question or just want to connect? We’d be happy to hear from you. Fill out the form and we’ll get back to you soon.
+          Got a question or just want to connect? We’d be happy to hear from you. Fill out the form and we’ll get back to you soon.
         </p>
       </div>
 
       <div className="max-w-6xl w-full bg-white rounded-[2.5rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] overflow-hidden flex flex-col md:flex-row relative z-10 border border-white">
-         {/* --- LEFT SECTION */}
-       
+        {/* --- LEFT SECTION */}
+
         <div className="md:w-5/12 bg-[#102a43] p-10 md:p-14 text-white relative flex flex-col justify-between overflow-hidden">
-          
+
           {/* --- GRAPHIC ELEMENTS --- */}
           {/* Large Soft Orb */}
           <div className="absolute bottom-[-40px] right-[-40px] w-64 h-64 bg-orange-500 rounded-full blur-[70px] opacity-30 animate-pulse" />
           {/* Decorative Circle Outline */}
           <div className="absolute top-10 right-10 w-32 h-32 border-[20px] border-white/5 rounded-full" />
           {/* Subtle Grid Overlay */}
-          <div className="absolute inset-0 opacity-10 pointer-events-none" 
-               style={{ backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)`, backgroundSize: '24px 24px' }} />
+          <div className="absolute inset-0 opacity-10 pointer-events-none"
+            style={{ backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)`, backgroundSize: '24px 24px' }} />
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Contact Information</h2>
@@ -86,14 +86,14 @@ const ContactUs01 = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
                   <MdWifiCalling className="text-2xl" />
                 </div>
-                <span className="text-lg font-medium">+91 99907 82525</span>
+                <span className="text-lg font-medium">+55 91984957417</span>
               </div>
 
               <div className="flex items-center gap-6 group cursor-pointer">
                 <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
                   <MdOutlineEmail className="text-2xl" />
                 </div>
-                <span className="text-lg font-medium">crossoverfintechsupport@gmail.com</span>
+                <span className="text-lg font-medium">stackbrsupport@gmail.com</span>
               </div>
 
               <div className="flex items-start gap-6 group cursor-pointer">
@@ -101,8 +101,8 @@ const ContactUs01 = () => {
                   <MdLocationOn className="text-2xl mt-1" />
                 </div>
                 <p className="text-lg leading-relaxed font-medium">
-                  E-48, Sector-03, Gautambuddha Nagar, <br />
-                  Noida, Uttar Pradesh, 201301
+                  Avenida Senador Lemos, <br />
+                  Belem, PA, 66117410
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ const ContactUs01 = () => {
         {/* --- RIGHT SECTION (White Form) --- */}
         <div className="md:w-7/12 p-8 md:p-14 bg-white">
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
-            
+
             {/* Standard Inputs */}
             {[
               { label: "First Name", name: "firstName", type: "text" },

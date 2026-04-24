@@ -16,22 +16,22 @@ const Footer = () => {
       {/* Main Footer Section */}
       <section className="relative min-h-[400px] flex flex-col justify-center bg-[#102A43]">
         {/* Background Image - Only on Desktop */}
-        <img 
-          src="https://res.cloudinary.com/dcgxjwv68/image/upload/v1775496983/cfs_assets/team01.png" 
-          alt="Team background" 
+        <img
+          src="https://res.cloudinary.com/dcgxjwv68/image/upload/v1775496983/cfs_assets/team01.png"
+          alt="Team background"
           className="absolute inset-0 w-full h-full object-cover z-0 hidden lg:block opacity-60"
         />
 
         {/* Global Dark Overlay */}
         <div className="absolute inset-0 w-full h-full bg-[#102a43e5] lg:bg-[#102a43d9] z-0" suppressHydrationWarning={true}></div>
-        
+
         {/* Content Container */}
         <section className="relative z-10 w-full py-10 md:py-16 px-6">
           <div className="max-w-7xl mx-auto border-t border-white/10 pt-10 md:pt-12" suppressHydrationWarning={true}>
-            
+
             {/* Grid Container */}
             <div className="grid grid-cols-2 lg:grid-cols-12 gap-y-12 gap-x-6 lg:gap-12 text-white">
-              
+
               {/* Reach us section - Full width on mobile */}
               <section className="col-span-2 lg:col-span-3 flex flex-col items-start">
                 <h2 className="text-xl font-bold pb-3 border-b-2 border-orange-500 w-fit mb-6">Reach Us</h2>
@@ -40,20 +40,20 @@ const Footer = () => {
                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-orange-500 transition-all">
                       <FaPhone className="w-4 h-4 text-orange-500 group-hover:text-white" />
                     </div>
-                    <p className="text-sm md:text-base font-semibold">+91 99907 82525</p>
+                    <p className="text-sm md:text-base font-semibold">+55 91984957417</p>
                   </a>
-                  <a href="mailto:crossoverfintechsupport@gmail.com" className="flex gap-4 items-center hover:text-orange-400 transition-colors group">
+                  <a href="mailto:stackbrsupport@gmail.com" className="flex gap-4 items-center hover:text-orange-400 transition-colors group">
                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-orange-500 transition-all">
                       <MdEmail className="w-5 h-5 text-orange-500 group-hover:text-white" />
                     </div>
-                    <span className="text-xs sm:text-sm font-semibold break-all">crossoverfintechsupport@gmail.com</span>
+                    <span className="text-xs sm:text-sm font-semibold break-all">stackbrsupport@gmail.com</span>
                   </a>
                   <div className="flex gap-4 items-start group">
                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-orange-500 transition-all shrink-0">
                       <MdLocationPin className="w-5 h-5 text-orange-500 group-hover:text-white" />
                     </div>
                     <span className="text-xs sm:text-sm font-semibold leading-relaxed pt-1">
-                      E-48, Sector-03, Gautambuddha Nagar, <br className="hidden md:block"/> Noida, Uttar Pradesh, 201301
+                      Avenida Senador Lemos, <br className="hidden md:block" /> Belem, PA, 66117410
                     </span>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Footer = () => {
       <div className="py-6 w-full bg-[#fe741f] relative z-20 pb-36 md:pb-6" suppressHydrationWarning={true}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-white text-[12px] sm:text-sm font-bold">
           <div className="flex items-center gap-2">
-            <FaRegCopyright className="text-base"/> 
+            <FaRegCopyright className="text-base" />
             <span suppressHydrationWarning={true}>{new Date().getFullYear()} Crossover Fintech Support.</span>
           </div>
           <p className="text-white/90">Empowering Businesses Since 2023.</p>
@@ -127,7 +127,7 @@ export const Newsletter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email) return alert("Please enter your email");
-    
+
     setIsSubmitting(true);
     try {
       const response = await api.post('/newsletter', { email });
@@ -146,7 +146,7 @@ export const Newsletter = () => {
     <div className="w-full flex flex-col gap-6" suppressHydrationWarning={true}>
       <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
         <h2 className="text-base font-black text-white mb-4 uppercase tracking-wider">Stay Informed</h2>
-        <form 
+        <form
           onSubmit={handleSubmit}
           className="flex w-full h-12 overflow-hidden rounded-xl bg-white/10 border border-white/20 p-1 mb-3"
         >
@@ -158,12 +158,12 @@ export const Newsletter = () => {
             className="bg-transparent w-full px-4 outline-none text-white text-sm placeholder:text-gray-400"
             placeholder="Your email"
           />
-          <button 
+          <button
             type="submit"
             disabled={isSubmitting}
             className="bg-orange-500 hover:bg-orange-600 transition-all px-4 rounded-lg text-white flex items-center justify-center disabled:opacity-50 active:scale-95"
           >
-            {isSubmitting ? "..." : <FaLocationArrow/>}
+            {isSubmitting ? "..." : <FaLocationArrow />}
           </button>
         </form>
         <p className="text-[10px] text-gray-400 font-medium">
