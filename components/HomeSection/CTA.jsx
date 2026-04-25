@@ -29,7 +29,7 @@ const CTA = ({
   return (
     <section className="w-full py-4 md:py-8 ">
       {/* Boxed Container for a more premium look (can be removed if you want full edge-to-edge) */}
-      <div className="relative w-full  h-[500px] md:h-[550px] overflow-hidden shadow-2xl group">
+      <div className="relative w-full  h-[620px] md:h-[550px] overflow-hidden shadow-2xl group">
         {/* Animated Background Image */}
         <motion.img
           initial={{ scale: 1.1 }}
